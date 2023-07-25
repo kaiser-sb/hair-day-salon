@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgb(241, 238, 233); */
+
+    background-image: url("../images/salon_transparent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+
+    font-family: Belleza, Urbanist, Roboto, sans-serif;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+main, header, nav, footer {
+    margin: 0.75rem auto;
+}
+
+header > img {
+    display: block;
+    width: 35%;
+    min-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+    20% { transform: rotate(15deg); } 
+    40% { transform: rotate(-10deg); } 
+    60% { transform: rotate(5deg); } 
+    80% { transform: rotate(-5deg); } 
+    100% { transform: rotate(0deg); } 
+}
+
+nav {
+    padding: 0.3rem;
+    background-color: rgb(241, 238, 233);
+    box-shadow: 0.5rem 0.5rem 3rem grey;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0.7rem 0.7rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #c72f2c;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    margin: 0 0.1rem;
+}
+
+nav  a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+nav a:hover {
+    padding: 0.6rem 0.85rem;
+    font-size: 1.3rem;
+}
+
+h2, h3 {
+    margin-bottom: 0.7rem;
+}
+
+section {
+    display: flex;
+    text-align: center;
+    padding: 0.75rem 0;
+    justify-content: center;
+}
+
+article {
+    flex: 1;
+}
+
+#offer {
+    background-color: #a38947;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: 0 0.75rem;
+}
+
+#offer > p {
+    color: rgb(241, 238, 233);
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin: 0 0.75rem;
+}
+
+#offer > img {
+    border-radius: 0 0.5rem 0.5rem 0;
+    width: 30%;
+    height: 100%;
+}
+
+#offer a {
+    display: block;
+    float: right;
+    background-color: #c72f2c;
+    color: rgb(241, 238, 233);
+    padding: 0.8rem;
+    margin-top: 0.7rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0.3rem 0.3rem 1rem #e9cf8e;
+    border-radius: 3rem;
+}
+
+#offer a:hover {
+    padding: 0.9rem;
+}
+
+#service h1 {
+    color: rgb(241, 238, 233);
+    background-color: #c72f2c;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    padding: 1rem;
+    font-size: 2.5rem;
+    border-radius: 0.7rem;
+    font-family: Urbanist;
+}
+
+#service, #info {
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+#info {
+    background-color: #a38947;
+}
+
+#info article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1.2rem;
+    padding: 0.5rem;
+    background-color: #e9cf8e;
+    border-radius: 0.5rem;
+}
+
+#info p {
+    text-align: justify;
+}
+
+#info li {
+    list-style: none;
+}
+
+#info img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+#info figcaption {
+    font-family: Urbanist;
+}
+
+#info a {
+    text-decoration: none;
+    color: #c72f2c;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 3rem grey;
+    background-color: rgb(241, 238, 233);
+    font-size: small;
+}
+
+footer > div {
+    flex: 1;
+    margin: 0.7rem 0.7rem;
+    text-align: center;
+}
+
+footer img {
+    width: 30%;
+    min-width: 7rem;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+        background-color: #c72f2c;
+        border-radius: 0.5rem;
+    }
+    #offer > p {
+        font-size: 1rem;
+    }
+    #offer a {
+        font-size: 0.8rem;
+    }
+    #offer img {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    #offer {
+        flex-direction: column-reverse;
+    }
+    
+}
+

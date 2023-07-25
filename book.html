@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hair Day</title>
+    <meta name="description" content="Based in Madison, Wisconsin, Hair Day is a boutique hair salon that specializes in cut, color and styling.">
+    <meta name="author" content="Hair Day Salon">
+
+    <meta property="og:title" content="20% Discount on ALL Services!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/Artboard 19.jpg" />
+    <meta property="og:url" content="https://hair-day-salon.netlify.app/" />
+    
+    <link rel="stylesheet" href="css/book.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Belleza|Urbanist|Roboto">
+    
+</head>
+
+<body>
+    <header>
+        <img src="images/Artboard 1.png" alt="Hair Day Salon Logo">
+    
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book.html">Book Your Day</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+    </nav>
+    <main>
+        <section id="header">
+            <h3>Please fill out the details for booking</h3>
+        </section>
+
+        <section id="#form">
+            <form id="main-form">
+                <label for="name">* Name :</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name ...." required>
+                <label for="email">* Email :</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email ID ...." required>
+                <label for="contact">* Contact No :</label>
+                <input type="tel" name="contact" id="contact" placeholder="Enter Your Contact No...." required>
+                <label for="date">* Date</label>
+                <input type="date" name="date" id="date" required>
+                <button type="submit" id="btnsubmit" onclick="clearForm()">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <img src="images/Artboard 22.png" alt="small logo of Hair Day Salon">
+        </div>
+        <div>
+            <p>© 2023 Hair Day Salon</p>
+        </div>
+    </footer>
+    <script src="js/book.js"></script>
+    
+</body>
+
+</html>
