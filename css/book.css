@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgb(241, 238, 233); */
+    background-image: url("../images/salon_transparent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+
+    font-family: Belleza, Urbanist, Roboto, sans-serif;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+main, header, nav, footer {
+    margin: 0.75rem auto;
+}
+
+header > img {
+    display: block;
+    width: 35%;
+    min-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+    20% { transform: rotate(15deg); } 
+    40% { transform: rotate(-10deg); } 
+    60% { transform: rotate(5deg); } 
+    80% { transform: rotate(-5deg); } 
+    100% { transform: rotate(0deg); } 
+}
+nav {
+    padding: 0.3rem;
+    box-shadow: 0.5rem 0.5rem 3rem grey;
+    background-color: rgb(241, 238, 233);
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0.7rem 0.7rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #c72f2c;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    margin: 0 0.1rem;
+}
+
+nav  a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+nav a:hover {
+    padding: 0.6rem 0.85rem;
+    font-size: 1.3rem;
+}
+
+main {
+    background-color: rgb(241, 238, 233);
+    border-radius: 0.7rem;
+    border: 5px solid #c72f2c;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+section h3 {
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    font-family: Urbanist;
+    color: antiquewhite;
+    padding: 0 0.5rem;
+}
+
+#header {
+    background-color: #c72f2c;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 80%;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+}
+
+form label {
+    padding: 0.5rem 2rem;
+    font-weight: bolder;
+}
+
+form button {
+    width: 8rem;
+    padding: 0.6rem;
+    margin: 1rem;
+    border-radius: 0.8rem;
+    background-color: #c72f2c;
+    color: antiquewhite;
+    font-family: Urbanist;
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+form button:hover {
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+}
+
+#form {
+    margin-top: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    background-color: rgb(241, 238, 233);
+    box-shadow: 0.5rem 0.5rem 3rem grey;
+    margin-bottom: 0.1rem;
+    font-size: small;
+}
+
+footer > div {
+    flex: 1;
+    margin: 0.7rem 0.7rem;
+    text-align: center;
+}
+
+footer img {
+    width: 30%;
+    min-width: 7rem;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+        background-color: #c72f2c;
+        border-radius: 0.5rem;
+    }
+
+}
